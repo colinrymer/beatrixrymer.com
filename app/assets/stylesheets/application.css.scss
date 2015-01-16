@@ -1,0 +1,15 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  text-align: center;
+}
+
+.jumbotron img {
+  max-width: 100%;
+}

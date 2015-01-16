@@ -1,0 +1,24 @@
+h1 Hello, World!
+.jumbotron
+  == image_tag @baby.photo
+.row
+  .col-lg-6
+    h4 Name
+    p
+      == "#{@baby.first_name} #{@baby.middle_name} #{@baby.last_name}"
+    h4 Weight
+    p
+      == "#{@baby.pounds} lbs. and #{@baby.ounces} ounce#{'s' unless ['1', 'one'].include? @baby.ounces}"
+    h4 Hair Color
+    p
+      == @baby.hair_color
+  .col-lg-6
+    h4 Born
+    p
+      == @baby.birthdate.strftime('%B %-d, %Y at %l:%M %p')
+    h4 Height
+    p
+      == "#{@baby.height} inches"
+    h4 Eye Color
+    p
+      == @baby.eye_color
