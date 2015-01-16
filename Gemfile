@@ -17,6 +17,7 @@ gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'paperclip'
 gem 'aws-sdk'
+gem 'newrelic_rpm'
 
 group :production do
   gem 'puma'
